@@ -5,7 +5,7 @@ int stack[100];
 int ind=-1;
 
 bool isEmpty(){
-    if(ind >= 1)
+    if(ind >= 0)
         return false;
     else
         return true;
@@ -28,6 +28,8 @@ int top(){
 int main()
 {
    push(5);
+    cout << isEmpty()<< endl;
+
    push(4);
    
    push(7);
