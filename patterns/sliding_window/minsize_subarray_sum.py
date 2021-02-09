@@ -1,6 +1,6 @@
 class Solution:
     def minSubArrayLen(self, s: int, nums: List[int]) -> int:
-        st, end = 0, 0
+        st = 0
         min_len, sum_so_far = len(nums)+1, 0
         for end in range(len(nums)):
             sum_so_far += nums[end]
